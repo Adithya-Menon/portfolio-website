@@ -1,6 +1,6 @@
 export default function Navbar() {
     return <nav className="nav">
-        <a href="/" className="site-title">Site Name</a>
+        <a href="/" className="site-title">Adithya's Analytics Portfolio </a>
         <ul>
             <li className="active"> 
                 <a href="/projects">Projects</a>
