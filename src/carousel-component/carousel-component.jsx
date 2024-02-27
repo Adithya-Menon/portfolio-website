@@ -22,7 +22,7 @@ function Carousel({data}) {
             <BsArrowRightCircleFill className="arrow arrow-right" onClick= {nextSlide} />
             <span className="indicators ">
                 {data.slides.map((_, idx) => {
-                    return <button key = {idx} onClick={null} className={slide === idx ? "indicator": "indicator indicator-inactive"}> </button>
+                    return <button key = {idx} onClick={() =>  setSlide(idx)} className={slide === idx ? "indicator": "indicator indicator-inactive"}> </button>
                 })}
             </span>
         </div>
