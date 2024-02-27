@@ -1,9 +1,9 @@
 .about-me-container {
-    display: flex;
+    display: inline-flexbox;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    height: 100vh; /* Adjust as needed */
+    height: 100vh; 
   }
 
 .about-me-card {
@@ -15,10 +15,10 @@
   }
   
   .about-me-card img {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    border-radius: 50%; /* To make the image circular */
-    object-fit: cover; /* This ensures the image covers the entire circle without stretching */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: none; 
   }
 
   

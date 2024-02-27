@@ -36,13 +36,18 @@ body {
     display: flex;
 }
 
-.nav li.active {
-    background-color: #555;
+.nav li {
+    transform: scale(1); /* initial scale */ 
+    transition: transform 0.5s;
 }
 
 
 .nav li:hover {
     background-color: #777;
+    transform: scale(1.1); 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 

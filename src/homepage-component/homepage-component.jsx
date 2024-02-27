@@ -1,10 +1,14 @@
 import React from 'react';
+import About from '../about-component/about-component';
+import Carousel from '../carousel-component/carousel-component';
+import slides from '../assets/projectImages.json';
+import './homepage.css'
 
 function Home() {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>This is me and my info</p>
+    <div className= "aboutCard">
+      <About ></About>
+      <Carousel data={slides}/>
     </div>
   );
 }

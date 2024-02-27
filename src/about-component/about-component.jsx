@@ -1,11 +1,12 @@
 import React from 'react';
 import './about.css'; 
 
-function About () {
+function About ({data}) {
+  console.log(data)
   return (
     <div className="about-me-container">
     <div className="about-me-card">
-      <img src={require('../assets/pphoto.jpeg')} alt="Your Face" />
+      <img src={require('../assets/pphoto.jpeg')} alt="Adithya Ajay Menon photo" />
       <div className="content">
         <h2>About Me</h2>
         <p>
