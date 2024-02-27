@@ -1,0 +1,28 @@
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 100vh; /* Adjust as needed */
+  }
+
+.about-me-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me-card img {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%; /* To make the image circular */
+    object-fit: cover; /* This ensures the image covers the entire circle without stretching */
+  }
+
+  
+  .content {
+    margin-top: 20px;
+  }
+  
