@@ -1,8 +1,7 @@
 import React from 'react';
 import './about.css'; 
 
-function About ({data}) {
-  console.log(data)
+function About () {
   return (
     <div className="about-me-container">
     <div className="about-me-card">
