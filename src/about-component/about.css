@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px; 
+    padding-left: 2rem;
   }
 
 .about-me-card {
@@ -25,3 +26,21 @@
     margin-top: 20px;
   }
   
+  .linkedin-button {
+    margin-top: 20px;
+  }
+  
+  .linkedin-button a {
+    display: flex;
+    align-items: center;
+    color: #0077b5; /* LinkedIn blue color */
+    text-decoration: none;
+  }
+  
+  .linkedin-button a:hover {
+    text-decoration: underline;
+  }
+  
+  .linkedin-button span {
+    margin-left: 10px;
+  }

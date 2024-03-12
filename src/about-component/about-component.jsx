@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './about.css'; 
 
 function About () {
@@ -20,6 +22,12 @@ function About () {
         Looking ahead, I'm on the hunt for roles where I can blend my tech skills and budding analytics knowledge to tackle business puzzles head-on.
       </p>
       </div>
+      <div className="linkedin-button">
+            <a href="https://www.linkedin.com/in/adithya-menon-off/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
+              <span>LinkedIn</span>
+            </a>
+          </div>
     </div>
     </div>
   );
