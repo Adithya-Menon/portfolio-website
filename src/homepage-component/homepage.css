@@ -2,12 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
-  }
-  
-  
-  
-  .projects-container h2 {
-    margin-bottom: 10px;
-  }
-  
+}
+    
+.projects-container h2 {
+    margin-bottom: 2px;
+}
+    

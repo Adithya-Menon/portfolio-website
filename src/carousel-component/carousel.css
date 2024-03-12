@@ -7,8 +7,8 @@
     height: 720px;
     padding: 20px;
     cursor: pointer;
-    margin-top: 20px;
-    margin-left: 20px; 
+    margin-top: 10px;
+    margin-left: 10px; 
 }
 
 .slide {
@@ -46,12 +46,10 @@
 
 .indicators {
     display: flex;
-    justify-content: center; /* Align indicators in the middle horizontally */
+    justify-content: center;
     position: relative;
-    top: 1rem;
-    margin: 20px;
+    top: -6.5rem; /* Adjust the position based on your design */
   }
-  
 
 .indicator {
     background-color: white;

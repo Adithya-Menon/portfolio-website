@@ -24,13 +24,14 @@ function Projects() {
         )}
       </div>
     );
+    
   }
   
 
   return (
-    <div>
+    <div className = "projectContainer">
       <h1>Projects</h1>
-      <Paper square>
+      <Paper square id="paper">
         <Tabs
           value={value}
           textColor="primary"
@@ -50,15 +51,20 @@ function Projects() {
                     bottom = "0" 
                     right = "0" 
                     width = "100%"
-                    height = "100%"
+                    height = "700px"
                     border = "none" 
                     margin = "0"
                     padding = "0"
                     z-index = "999999"
-                    position = "absolute"/>
+                    position = "relative"/>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          {/* Content for your One-Page Infographic tab goes here */}
+          <h3>One-Page Infographic</h3>
+          <p>This project is an exceptional display of analytical prowess, where a profound analysis was conducted on store-provided data, 
+            focusing on product, basket, and customer segmentation. Utilized Python for intricate data analysis, Excel for data organization and management, 
+            and PowerPoint for creating a compelling one-pager info-graphic. </p>
+          <p>It employed sophisticated association algorithms like Apriori and advanced segmentation algorithms to uncover deep insights into consumer behaviors and market trends.</p>
+          <img className = "onePage" src="https://i.ibb.co/jWZvqpL/one-pager.png"></img>
         </TabPanel>
       </Paper>
     </div>
