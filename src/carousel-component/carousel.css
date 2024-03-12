@@ -46,10 +46,12 @@
 
 .indicators {
     display: flex;
-    position: absolute;
-    bottom: 1rem;
+    justify-content: center; /* Align indicators in the middle horizontally */
+    position: relative;
+    top: 1rem;
     margin: 20px;
-}
+  }
+  
 
 .indicator {
     background-color: white;
@@ -67,3 +69,8 @@
 .indicator-inactive {
     background-color: gray;
 }
+
+.imgDesc {
+    margin-top: 10px;
+    text-align: center;
+  }

@@ -20,18 +20,29 @@ function Carousel({data}) {
         navigate('/projects'); 
       };
     return (
-        <div className="carousel">
-            <BsArrowLeftCircleFill className="arrow arrow-left" onClick= {prevSlide} />
-            {data.slides.map((item, idx) => {
-                return <img src = {item.src} alt = {item.alt} key = {idx} className= {slide === idx ? "slide": "slide slide-hidden"} onClick={projectClick}/>
-            })}
-            <BsArrowRightCircleFill className="arrow arrow-right" onClick= {nextSlide} />
-            <span className="indicators ">
-                {data.slides.map((_, idx) => {
-                    return <button key = {idx} onClick={() =>  setSlide(idx)} className={slide === idx ? "indicator": "indicator indicator-inactive"}> </button>
-                })}
-            </span>
-        </div>
+        <div className="carousel-container">
+      <div className="carousel">
+        <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
+        {data.slides.map((item, idx) => (
+          <img
+            src={item.src}
+            alt={item.alt}
+            key={idx}
+            className={slide === idx ? 'slide' : 'slide slide-hidden'}
+            onClick={projectClick}
+          />
+        ))}
+        <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
+      </div>
+      <div className="imgDesc">
+        <h4>{data.slides[slide].alt}</h4>
+      </div>
+      <span className="indicators">
+        {data.slides.map((_, idx) => (
+          <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? 'indicator' : 'indicator indicator-inactive'}></button>
+        ))}
+      </span>
+    </div>
     )
 } 
 
